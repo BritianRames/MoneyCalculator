@@ -2,8 +2,8 @@ package moneycalculator.ui;
 
 import moneycalculator.model.Money;
 
-public interface MoneyDisplay {
+public interface MoneyDialog {
     
-    void display (Money money);
+    Money get();
     
 }

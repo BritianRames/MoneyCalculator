@@ -1,23 +1,15 @@
 package moneycalculator.model;
 
-import java.util.Date;
-import moneycalculator.model.Currency;
-
 public class ExchangeRate {
     private final Currency from;
     private final Currency to;
-    private final Date date;
-    private final double rate;
+    private final double amount;
 
-    public ExchangeRate(Date date, Currency from, Currency to, double rate) {
-        this.date = date;
+    public ExchangeRate(Currency from, Currency to, double amount) {
         this.from = from;
         this.to = to;
-        this.rate = rate;
-    }
-
-    public Date getDate() {
-        return date;
+        this.amount = amount;
+        
     }
 
     public Currency getFrom() {
@@ -28,7 +20,7 @@ public class ExchangeRate {
         return to;
     }
 
-    public double getRate() {
-        return rate;
+    public double getAmount() {
+        return amount;
     }
 }

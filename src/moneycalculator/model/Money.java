@@ -7,6 +7,7 @@ public class Money {
     public Money(double amount, Currency currency) {
         this.amount = amount;
         this.currency = currency;
+        
     }
 
     public double getAmount() {
@@ -16,7 +17,4 @@ public class Money {
     public Currency getCurrency() {
         return currency;
     }
-    
-    
-    
 }
